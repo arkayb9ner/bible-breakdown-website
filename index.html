@@ -113,7 +113,7 @@
   #genesis{background:var(--surface-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
   .progress-row{display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-bottom:22px}
   .progress-track{flex:1 1 220px; height:10px; background:var(--line); border-radius:999px; overflow:hidden}
-  .progress-fill{height:100%; width:13.33%; background:var(--accent); border-radius:999px}
+  .progress-fill{height:100%; width:26.7%; background:var(--accent); border-radius:999px}
   .progress-label{font-size:.92rem; color:var(--ink-2)}
   .reader{display:grid; grid-template-columns:320px 1fr; gap:22px; align-items:start}
   .toc{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden}
@@ -270,13 +270,13 @@
     <div class="wrap">
       <div class="sec-head">
         <h2 id="gen-h">Genesis — the sample book</h2>
-        <p>Genesis is where Bible Breakdown begins. Its fifty chapters are mapped into fifteen sections, from Creation to Jacob’s family settling in Egypt. Sections 1 and 2 are written in full below; the remaining thirteen are mapped and will be written one at a time.</p>
+        <p>Genesis is where Bible Breakdown begins. Its fifty chapters are mapped into fifteen sections, from Creation to Jacob’s family settling in Egypt. Sections 1, 2, 3, and 4 are written in full below; the remaining eleven are mapped and will be written one at a time.</p>
       </div>
       <div class="progress-row">
-        <div class="progress-track" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="15" aria-label="Genesis sections written: 2 of 15">
+        <div class="progress-track" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="15" aria-label="Genesis sections written: 4 of 15">
           <div class="progress-fill"></div>
         </div>
-        <span class="progress-label"><strong>2 of 15</strong> sections written · 13 mapped</span>
+        <span class="progress-label"><strong>4 of 15</strong> sections written · 11 mapped</span>
       </div>
       <div class="reader">
         <nav class="toc" aria-label="Genesis sections">
@@ -315,7 +315,7 @@
   <div class="wrap">
     <p class="footer-back"><a class="back-btn" href="https://christianarmory.org" aria-label="Back to Christian Armory — main site"><span class="arr" aria-hidden="true">←</span> Back to Christian Armory</a></p>
     <p><strong>Bible Breakdown</strong> is a companion project to the <a href="https://christianarmory.org">Christian Armory</a>. All Scripture quotations are from the Catholic Public Domain Version (CPDV).</p>
-    <p class="fine">Genesis is the sample book: Sections 1–2 are complete, Sections 3–15 are mapped by title and chapter range and will be written one at a time. The remaining 72 books follow the same pattern once Genesis is underway.</p>
+    <p class="fine">Genesis is the sample book: Sections 1–4 are complete, Sections 5–15 are mapped by title and chapter range and will be written one at a time. The remaining 72 books follow the same pattern once Genesis is underway.</p>
   </div>
 </footer>
 
@@ -326,8 +326,8 @@
   var GENESIS = [
     { n:1, title:"In the Beginning — Creation", range:"Genesis 1–2", ready:true },
     { n:2, title:"The Fall", range:"Genesis 3", ready:true },
-    { n:3, title:"Cain, Abel, and the Line of Seth", range:"Genesis 4–5" },
-    { n:4, title:"The Flood", range:"Genesis 6–9" },
+    { n:3, title:"Cain, Abel, and the Line of Seth", range:"Genesis 4–5", ready:true },
+    { n:4, title:"The Flood", range:"Genesis 6–9", ready:true },
     { n:5, title:"The Nations and Babel", range:"Genesis 10–11" },
     { n:6, title:"The Call of Abram", range:"Genesis 12–15" },
     { n:7, title:"Hagar, Ishmael, and the Covenant", range:"Genesis 16–17" },
@@ -389,7 +389,58 @@
     reflect: "The serpent’s real question was, “Can you trust God?” Where in your own life is that same question being asked right now?"
   };
 
-  var SECTIONS = { 1: SECTION_1, 2: SECTION_2 };
+  var SECTION_3 = {
+    happens: [
+      "Outside the garden, Adam and Eve have two sons: Cain, a farmer, and Abel, a shepherd. Both bring God an offering. God looks with favour on Abel’s offering — the firstborn of his flock — but not on Cain’s. Cain’s face falls, and God warns him: sin is crouching at the door, and he must master it. Instead, Cain lures Abel out into the field and kills him — the first murder. When God asks where Abel is, Cain answers, “Am I my brother’s keeper?” God curses Cain to wander the earth, yet marks him so no one will kill him — judgment and mercy together. Cain settles east of Eden, and his descendants build cities, make music, and forge bronze and iron — human progress — but his descendant Lamech boasts of killing, and sin grows bolder with every generation. Meanwhile God gives Eve another son, Seth, in place of Abel. Seth’s son Enos begins to call on the name of the Lord. Chapter 5 then traces Seth’s line down through long lives to Noah: Adam, Seth, Enos, Cainan, Mahalalel, Jared, Enoch, Methuselah, Lamech — and the words “and then he died” toll after almost every name. The one exception is Enoch, who walked with God and was taken, without dying."
+    ],
+    verses: [
+      ["Genesis 4:4", "Abel likewise offered from the firstborn of his flock, and from their fat. And the Lord looked with favor on Abel and his gifts."],
+      ["Genesis 4:7", "If you behave well, will you not receive? But if you behave badly, will not sin at once be present at the door? And so its desire will be within you, and you will be dominated by it."],
+      ["Genesis 4:9", "And the Lord said to Cain, ‘Where is your brother Abel?’ And he responded: ‘I do not know. Am I my brother’s keeper?’"],
+      ["Genesis 4:10", "What have you done? The voice of your brother’s blood cries out to me from the land."],
+      ["Genesis 4:25", "Adam also knew his wife again, and she gave birth to a son, and she called his name Seth, saying, ‘God has given me another offspring, in place of Abel, whom Cain killed.’"],
+      ["Genesis 4:26", "But to Seth also was born a son, whom he called Enos. This one began to invoke the name of the Lord."],
+      ["Genesis 5:24", "And he walked with God, and then he was seen no more, because God took him."]
+    ],
+    themes: [
+      "Sin grows if it is not mastered — envy becomes murder in a single chapter.",
+      "God confronts, judges, and still shows mercy: Cain is punished, yet protected by God’s mark.",
+      "Two lines run through the world: Cain’s line of human progress shadowed by pride and violence, and Seth’s line of people who call on the name of the Lord.",
+      "Death casts its shadow over the whole chapter — “and then he died” — yet Enoch is taken by God, a sign that death is not the last word.",
+      "God keeps the promise alive: through Seth, not Cain, runs the line by which the Saviour will come."
+    ],
+    reflect: "Sin was crouching at Cain’s door before he ever raised his hand. What is crouching at your door right now — and what would it look like to master it before it masters you?"
+  };
+
+  var SECTION_4 = {
+    happens: [
+      "Mankind has spread across the earth — and with it, wickedness. Every thought of the human heart, God sees, is intent upon evil at all times. God grieves that he made man, and he announces that he will wipe away what he made — but one man finds grace: Noah, a just man who walked with God. God tells Noah to build an ark of smoothed wood, sealed with pitch inside and out, and to bring into it his family and two of every living thing — because God will send a flood to cover the earth.",
+      "Noah does all things just as God instructed him. The waters come: the fountains of the great abyss burst open and the floodgates of heaven are opened, and the water covers even the highest mountains. Everything outside the ark dies. Inside, Noah, his family, and the animals are kept safe — the Lord himself closes the door behind them.",
+      "For months the waters rise and then fall. Then God remembers Noah. A wind passes over the earth, the waters recede, and the ark comes to rest on the mountains of Ararat. Noah sends out a raven, then a dove; when the dove comes back with a fresh olive leaf, he knows dry land is near. At last God says, “Go out of the ark,” and Noah steps out with his family and all the animals.",
+      "Noah’s first act on dry land is worship: he builds an altar and offers sacrifice to the Lord. God promises never again to curse the earth on account of man, and never again to destroy every living thing by flood. He blesses Noah and his sons — “Increase, and multiply, and fill the earth” — and sets his arc in the clouds as the sign of an everlasting covenant between himself and every living creature."
+    ],
+    verses: [
+      ["Genesis 6:5", "Then God, seeing that the wickedness of men was great upon the earth and that every thought of their heart was intent upon evil at all times,"],
+      ["Genesis 6:8", "Yet truly, Noah found grace before the Lord."],
+      ["Genesis 6:9", "These are the generations of Noah. Noah was a just man, and yet he was predominate among his generations, for he walked with God."],
+      ["Genesis 6:22", "And so Noah did all things just as God had instructed him."],
+      ["Genesis 7:16", "And those that entered went in male and female, from all that is flesh, just as God had instructed him. And then the Lord closed him in from the outside."],
+      ["Genesis 8:1", "Then God remembered Noah, and all living things, and all the cattle, which were with him in the ark, and he brought a wind across the earth, and the waters were diminished."],
+      ["Genesis 8:21", "And the Lord smelled the sweet odor and said: ‘I will no longer curse the earth because of man. For the feelings and thoughts of the heart of man are prone to evil from his youth. Therefore, I will no longer pierce every living soul as I have done."],
+      ["Genesis 9:13", "I will place my arc in the clouds, and it will be the sign of the pact between myself and the earth."]
+    ],
+    themes: [
+      "Sin has real consequences: human wickedness grieves God, and the flood follows a world filled with iniquity — judgment is not arbitrary.",
+      "Grace comes first: Noah “found grace before the Lord” — salvation begins as God’s gift, not Noah’s achievement.",
+      "Obedience that trusts: Noah builds the ark and enters it on God’s word alone, long before a drop of rain has fallen.",
+      "God remembers: “Then God remembered Noah” — God’s remembering is his saving action, not a lapse in memory.",
+      "Covenant and new beginning: the story ends not with destruction but with blessing — “Increase, and multiply, and fill the earth” echoes the first blessing of creation, and the arc in the clouds is the sign of a promise that endures.",
+      "Judgment and mercy held together: God judges sin seriously and saves those who trust him — the ark prefigures baptism (CCC 1219; 1 Pet 3:20–21)."
+    ],
+    reflect: "Noah obeyed God for years before the flood ever came. What is one thing God is asking you to trust him with now, before you can see how it turns out?"
+  };
+
+  var SECTIONS = { 1: SECTION_1, 2: SECTION_2, 3: SECTION_3, 4: SECTION_4 };
 
   var tocList = document.getElementById("toc-list");
   var panel = document.getElementById("panel");
