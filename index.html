@@ -270,13 +270,13 @@
     <div class="wrap">
       <div class="sec-head">
         <h2 id="gen-h">Genesis — the sample book</h2>
-        <p>Genesis is where Bible Breakdown begins. Its fifty chapters are mapped into fifteen sections, from Creation to Jacob’s family settling in Egypt. Sections 1, 2, 3, and 4 are written in full below; the remaining eleven are mapped and will be written one at a time.</p>
+        <p>Genesis is where Bible Breakdown begins. Its fifty chapters are mapped into fifteen sections, from Creation to Jacob’s family settling in Egypt. Sections 1, 2, 3, 4, 5, 6, and 7 are written in full below; the remaining eight are mapped and will be written one at a time.</p>
       </div>
       <div class="progress-row">
-        <div class="progress-track" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="15" aria-label="Genesis sections written: 4 of 15">
-          <div class="progress-fill"></div>
+        <div class="progress-track" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="15" aria-label="Genesis sections written: 7 of 15">
+          <div class="progress-fill" style="width:46.7%"></div>
         </div>
-        <span class="progress-label"><strong>4 of 15</strong> sections written · 11 mapped</span>
+        <span class="progress-label"><strong>7 of 15</strong> sections written · 8 mapped</span>
       </div>
       <div class="reader">
         <nav class="toc" aria-label="Genesis sections">
@@ -315,7 +315,7 @@
   <div class="wrap">
     <p class="footer-back"><a class="back-btn" href="https://christianarmory.org" aria-label="Back to Christian Armory — main site"><span class="arr" aria-hidden="true">←</span> Back to Christian Armory</a></p>
     <p><strong>Bible Breakdown</strong> is a companion project to the <a href="https://christianarmory.org">Christian Armory</a>. All Scripture quotations are from the Catholic Public Domain Version (CPDV).</p>
-    <p class="fine">Genesis is the sample book: Sections 1–4 are complete, Sections 5–15 are mapped by title and chapter range and will be written one at a time. The remaining 72 books follow the same pattern once Genesis is underway.</p>
+    <p class="fine">Genesis is the sample book: Sections 1–7 are complete, Sections 8–15 are mapped by title and chapter range and will be written one at a time. The remaining 72 books follow the same pattern once Genesis is underway.</p>
   </div>
 </footer>
 
@@ -328,9 +328,9 @@
     { n:2, title:"The Fall", range:"Genesis 3", ready:true },
     { n:3, title:"Cain, Abel, and the Line of Seth", range:"Genesis 4–5", ready:true },
     { n:4, title:"The Flood", range:"Genesis 6–9", ready:true },
-    { n:5, title:"The Nations and Babel", range:"Genesis 10–11" },
-    { n:6, title:"The Call of Abram", range:"Genesis 12–15" },
-    { n:7, title:"Hagar, Ishmael, and the Covenant", range:"Genesis 16–17" },
+    { n:5, title:"The Nations and Babel", range:"Genesis 10–11", ready:true },
+    { n:6, title:"The Call of Abram", range:"Genesis 12–15", ready:true },
+    { n:7, title:"Hagar, Ishmael, and the Covenant", range:"Genesis 16–17", ready:true },
     { n:8, title:"Sodom, Gomorrah, and the Promised Son", range:"Genesis 18–22" },
     { n:9, title:"Isaac and Rebekah", range:"Genesis 23–26" },
     { n:10, title:"Jacob and the Stolen Blessing", range:"Genesis 27–28" },
@@ -440,7 +440,87 @@
     reflect: "Noah obeyed God for years before the flood ever came. What is one thing God is asking you to trust him with now, before you can see how it turns out?"
   };
 
-  var SECTIONS = { 1: SECTION_1, 2: SECTION_2, 3: SECTION_3, 4: SECTION_4 };
+  var SECTION_5 = {
+    happens: [
+      "After the flood, Noah’s three sons — Shem, Ham, and Japheth — become the fathers of all the nations on earth. Chapter 10 traces their families as they spread out, each with its own language, land, and people. Among Ham’s descendants rises Nimrod, a mighty hunter and the first great king, who founds cities in the land of Shinar, including Babylon. Then the story narrows back to one place: in Shinar, all the people still share one language, and they decide to build a city with a tower reaching to heaven — to make a name for themselves and keep from being scattered. But God sees the pride in the plan, comes down, and confuses their language, so they can no longer understand one another. The building stops, and they scatter across the earth. That is why the city is called Babel — confusion. Chapter 11 then follows one line, Shem’s, down through ten generations to Terah and his sons Abram, Nahor, and Haran. Haran dies young in Ur of the Chaldeans, and Terah takes Abram, his wife Sarai — who is barren and childless — and his grandson Lot, and sets out for Canaan. They get as far as Haran and settle there, and Terah dies. The stage is set for Abram."
+    ],
+    verses: [
+      ["Genesis 10:8", "And then Cush conceived Nimrod; he began to be powerful on the earth."],
+      ["Genesis 10:32", "These are the families of Noah, according to their peoples and nations. The nations became divided according to these, on the earth after the great flood."],
+      ["Genesis 11:1", "Now the earth was of one language and of the same speech."],
+      ["Genesis 11:4", "And they said: ‘Come, let us make a city and a tower, so that its height may reach to heaven. And let us make our name famous before we are divided into all the lands.’"],
+      ["Genesis 11:6", "And he said: ‘Behold, the people are united, and all have one tongue. And since they have begun to do this, they will not desist from their plans, until they have completed their work.’"],
+      ["Genesis 11:9", "And for this reason, its name was called ‘Babel,’ because in that place the language of the whole earth became confused. And from then on, the Lord scattered them across the face of every region."],
+      ["Genesis 11:30", "But Sarai was barren and had no children."],
+      ["Genesis 11:31", "And so Terah took his son Abram, and his grandson Lot, the son of Haran, and his daughter-in-law Sarai, the wife of his son Abram, and he led them away from Ur of the Chaldeans, to go into the land of Canaan. And they approached as far as Haran, and they dwelt there."]
+    ],
+    themes: [
+      "Pride builds towers; humility receives a promise. The builders want to make their own name great; God will make Abram’s name great — but on his terms, not theirs.",
+      "Unity is a gift, not a goal in itself. One language, used to defy God, is not the unity God wants. True unity comes later, at Pentecost, when the divided tongues are healed by the Holy Spirit.",
+      "God’s judgment is also his mercy. Scattering the builders limits their pride and fulfils his command to fill the earth.",
+      "God works through one family. From all the nations of chapter 10, the story narrows to a single line — Shem to Abram — through whom God will bless the world.",
+      "Barrenness and promise. Sarai’s barrenness looks like a dead end — yet it is exactly where God’s promise will do its greatest work."
+    ],
+    reflect: "The builders of Babel wanted to make a name for themselves. What are you building to make your own name — and what would change if you trusted God to make it great instead?"
+  };
+
+  var SECTION_6 = {
+    happens: [
+      "The story narrows from all the nations to one man. God calls Abram — a seventy-five-year-old man living in Haran — to leave his land, his family, and his father’s house, and go to a land God will show him. No map, no details — only a promise: God will make of him a great nation, bless him, and bless the whole world through him. Abram goes. He takes his wife Sarai and his nephew Lot and travels into Canaan, where God promises the land to his children.",
+      "But Abram has no children, and the road is rough. A famine drives him down to Egypt, where fear gets the better of him: he asks Sarai to say she is his sister, and Pharaoh takes her into his house — until God strikes Pharaoh’s household and Abram is sent away. Back in Canaan, Abram and Lot have grown so rich in flocks that the land cannot hold them both. Abram lets Lot choose first, and Lot takes the well-watered Jordan valley — and settles near Sodom. God then repeats the promise to Abram: all the land he can see will belong to his offspring forever, as countless as the dust of the earth.",
+      "When a war of kings sweeps through the region and Lot is carried off captive, Abram takes three hundred and eighteen of his own men, pursues the raiders, and brings Lot and everything back. On the way home, a mysterious king and priest, Melchizedek of Salem, meets him with bread and wine and blesses him — and Abram gives him a tenth of everything. He refuses the king of Sodom’s reward, saying he will not take even a thread, so no one can say they made Abram rich.",
+      "Then God speaks again in a vision: “Do not be afraid, Abram, I am your protector.” Abram asks the honest question: what good is the promise if he dies childless? God takes him outside under the stars and says his offspring will be as numberless as the stars. And Abram believes God — and it is counted to him as righteousness. God seals the promise with a covenant ceremony: animals cut in two, and a smoking furnace and a burning lamp passing between the pieces — God himself walking through the covenant. And God tells Abram what lies ahead: his descendants will be strangers in a foreign land, enslaved and afflicted for four hundred years — but God will judge that nation, and they will come out with great wealth."
+    ],
+    verses: [
+      ["Genesis 12:1", "Then the Lord said to Abram: ‘Depart from your land, and from your kindred, and from your father’s house, and come into the land that I will show you.’"],
+      ["Genesis 12:2", "And I will make of you a great nation, and I will bless you and magnify your name, and you will be blessed."],
+      ["Genesis 12:3", "I will bless those who bless you, and curse those who curse you, and in you all the families of the earth will be blessed."],
+      ["Genesis 12:7", "Then the Lord appeared to Abram, and he said to him, ‘To your offspring, I will give this land.’ And there he built an altar to the Lord, who had appeared to him."],
+      ["Genesis 13:15", "All the land that you see, I will give to you, and to your offspring even forever."],
+      ["Genesis 14:18–19", "Then in truth, Melchizedek, the king of Salem, brought forth bread and wine, for he was a priest of the Most High God; he blessed him, and he said: ‘Blessed be Abram by the Most High God, who created heaven and earth.’"],
+      ["Genesis 15:1", "And so, these things having been transacted, the word of the Lord came to Abram by a vision, saying: ‘Do not be afraid, Abram, I am your protector, and your reward is exceedingly great.’"],
+      ["Genesis 15:5", "And he brought him outside, and he said to him, ‘Take in the heavens, and number the stars, if you can.’ And he said to him, ‘So also will your offspring be.’"],
+      ["Genesis 15:6", "Abram believed God, and it was reputed to him unto justice."],
+      ["Genesis 15:18", "On that day, God formed a covenant with Abram, saying: ‘To your offspring I will give this land, from the river of Egypt, even to the great river Euphrates.’"]
+    ],
+    themes: [
+      "Faith is going before you see the way — Abram leaves at seventy-five with no map, only a promise.",
+      "The promise is bigger than the circumstances — childless, a stranger, outnumbered — and God repeats it anyway.",
+      "Blessing is for the whole world — “in you all the families of the earth will be blessed” is the start of God’s plan to reach every nation.",
+      "Abram believed, and it was counted as righteousness — faith is the ground of the covenant; St. Paul builds his teaching on justification on this very verse (Romans 4:3).",
+      "Melchizedek, priest and king, brings bread and wine — the Church reads him as a foreshadowing of Christ, the eternal priest (Hebrews 7:17).",
+      "The covenant rests on God, not on Abram — God alone passes between the pieces.",
+      "God tells the hard truth too: slavery and affliction lie ahead before deliverance."
+    ],
+    reflect: "God asked Abram to leave everything familiar with only a promise to go on. What is God asking you to trust him with before you can see how it will work out?"
+  };
+
+  var SECTION_7 = {
+    happens: [
+      "Ten years after Abram arrives in Canaan, the promised child still hasn’t come. Sarai, who cannot conceive, gives her Egyptian handmaid Hagar to Abram as a wife — the custom of the day — hoping to build a family through her. Hagar conceives, and the two women fall into bitter conflict; Hagar flees into the wilderness.",
+      "There, by a spring on the road to Shur, the Angel of the Lord finds her. He tells her to return to Sarai, and he promises that her son will father a multitude too many to count. Hagar names the Lord “the God who has seen me” — the first person in Scripture to give God a name. Her son is called Ishmael, which means “God hears.”",
+      "Thirteen years pass. When Abram is ninety-nine, God appears again and seals the promise as a covenant: Abram becomes Abraham, “father of many nations”; Sarai becomes Sarah. Every male in the household is to be circumcised, as the sign of the covenant. And God promises the child of the covenant will come through Sarah herself — Isaac, born within a year. Abraham laughs at the impossibility of it. But he obeys the same day, circumcising his whole household."
+    ],
+    verses: [
+      ["Genesis 17:1", "In truth, after he began to be ninety-nine years of age, the Lord appeared to him. And he said to him: ‘I am the Almighty God. Walk in my sight and become complete.’"],
+      ["Genesis 16:11", "But thereafter he said: ‘Behold, you have conceived, and you will give birth to a son. And you shall call his name Ishmael, because the Lord has heard your affliction.’"],
+      ["Genesis 16:13", "Then she called upon the name of the Lord who had spoken to her: ‘You are the God who has seen me.’ For she said, ‘Certainly, here I have seen the back of the one who sees me.’"],
+      ["Genesis 17:5", "No longer will your name be called Abram. But you will be called Abraham, for I have established you as the father of many nations."],
+      ["Genesis 17:7", "And I will establish my covenant between me and you, and with your offspring after you in their generations, by a perpetual covenant: to be God to you and to your offspring after you."],
+      ["Genesis 17:10", "This is my covenant, which you shall observe, between me and you, and your offspring after you: All the males among you shall be circumcised."],
+      ["Genesis 17:19", "And God said to Abraham: ‘Your wife Sarah shall give birth to a son, and you shall call his name Isaac, and I will establish my covenant with him as a perpetual covenant, and with his offspring after him.’"],
+      ["Genesis 17:23", "Then Abraham took his son Ishmael, and all who were born in his house, and all whom he had bought, every male among the men of his house, and he circumcised the flesh of their foreskin promptly, the very same day, just as God had instructed him."]
+    ],
+    themes: [
+      "God’s promise outlasts human impatience — the shortcut through Hagar brings conflict, not the covenant child.",
+      "God sees the overlooked: Hagar, a foreign slave woman, is the first person in Scripture to name God, and God hears her affliction.",
+      "Covenant: God binds himself to Abraham’s family with a sign — circumcision — and with new names marking a new identity.",
+      "Faith and laughter: Abraham laughs at the promise, and obeys anyway."
+    ],
+    reflect: "Hagar named God “the God who has seen me” because he noticed her when no one else did. Where in your life do you need to remember that God sees you?"
+  };
+
+  var SECTIONS = { 1: SECTION_1, 2: SECTION_2, 3: SECTION_3, 4: SECTION_4, 5: SECTION_5, 6: SECTION_6, 7: SECTION_7 };
 
   var tocList = document.getElementById("toc-list");
   var panel = document.getElementById("panel");
