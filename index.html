@@ -270,13 +270,13 @@
     <div class="wrap">
       <div class="sec-head">
         <h2 id="gen-h">Genesis — the sample book</h2>
-        <p>Genesis is where Bible Breakdown begins. Its fifty chapters are mapped into fifteen sections, from Creation to Jacob’s family settling in Egypt. Sections 1, 2, 3, 4, 5, 6, and 7 are written in full below; the remaining eight are mapped and will be written one at a time.</p>
+        <p>Genesis is where Bible Breakdown begins. Its fifty chapters are mapped into fifteen sections, from Creation to Jacob’s family settling in Egypt. Sections 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 are written in full below; the remaining five are mapped and will be written one at a time.</p>
       </div>
       <div class="progress-row">
-        <div class="progress-track" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="15" aria-label="Genesis sections written: 7 of 15">
-          <div class="progress-fill" style="width:46.7%"></div>
+        <div class="progress-track" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="15" aria-label="Genesis sections written: 10 of 15">
+          <div class="progress-fill" style="width:66.7%"></div>
         </div>
-        <span class="progress-label"><strong>7 of 15</strong> sections written · 8 mapped</span>
+        <span class="progress-label"><strong>10 of 15</strong> sections written · 5 mapped</span>
       </div>
       <div class="reader">
         <nav class="toc" aria-label="Genesis sections">
@@ -315,7 +315,7 @@
   <div class="wrap">
     <p class="footer-back"><a class="back-btn" href="https://christianarmory.org" aria-label="Back to Christian Armory — main site"><span class="arr" aria-hidden="true">←</span> Back to Christian Armory</a></p>
     <p><strong>Bible Breakdown</strong> is a companion project to the <a href="https://christianarmory.org">Christian Armory</a>. All Scripture quotations are from the Catholic Public Domain Version (CPDV).</p>
-    <p class="fine">Genesis is the sample book: Sections 1–7 are complete, Sections 8–15 are mapped by title and chapter range and will be written one at a time. The remaining 72 books follow the same pattern once Genesis is underway.</p>
+    <p class="fine">Genesis is the sample book: Sections 1–10 are complete, Sections 11–15 are mapped by title and chapter range and will be written one at a time. The remaining 72 books follow the same pattern once Genesis is underway.</p>
   </div>
 </footer>
 
@@ -331,9 +331,9 @@
     { n:5, title:"The Nations and Babel", range:"Genesis 10–11", ready:true },
     { n:6, title:"The Call of Abram", range:"Genesis 12–15", ready:true },
     { n:7, title:"Hagar, Ishmael, and the Covenant", range:"Genesis 16–17", ready:true },
-    { n:8, title:"Sodom, Gomorrah, and the Promised Son", range:"Genesis 18–22" },
-    { n:9, title:"Isaac and Rebekah", range:"Genesis 23–26" },
-    { n:10, title:"Jacob and the Stolen Blessing", range:"Genesis 27–28" },
+    { n:8, title:"Sodom, Gomorrah, and the Promised Son", range:"Genesis 18–22", ready:true },
+    { n:9, title:"Isaac and Rebekah", range:"Genesis 23–26", ready:true },
+    { n:10, title:"Jacob and the Stolen Blessing", range:"Genesis 27–28", ready:true },
     { n:11, title:"Jacob in Haran", range:"Genesis 29–31" },
     { n:12, title:"Jacob Comes Home", range:"Genesis 32–36" },
     { n:13, title:"Joseph Sold into Egypt", range:"Genesis 37–40" },
@@ -520,7 +520,86 @@
     reflect: "Hagar named God “the God who has seen me” because he noticed her when no one else did. Where in your life do you need to remember that God sees you?"
   };
 
-  var SECTIONS = { 1: SECTION_1, 2: SECTION_2, 3: SECTION_3, 4: SECTION_4, 5: SECTION_5, 6: SECTION_6, 7: SECTION_7 };
+  var SECTION_8 = {
+    happens: [
+      "Three visitors come to Abraham at Mamre — and one of them is the Lord himself. They announce that Sarah will have a son within the year, and Sarah, listening at the tent door, laughs at the thought: she is ninety, Abraham a hundred. “Is anything difficult for God?” the Lord asks. Then the Lord tells Abraham what he means to do with Sodom, and Abraham pleads for the city, bargaining down from fifty righteous people to ten — but not even ten are found. Two angels reach Sodom, where Lot takes them in; the men of the city demand the guests, and the angels strike them blind and drag Lot’s family out of the city. Fire and brimstone fall from heaven; Lot’s wife looks back and becomes a pillar of salt. Abraham’s line continues: Isaac is born, just as God promised, and Sarah laughs for joy. But the household is torn — Hagar and Ishmael are sent away, though God promises to make a great nation of Ishmael too. Then comes the hardest test of all: God tells Abraham to offer Isaac, his only son, as a holocaust on Mount Moriah. Abraham obeys without a word of argument, binds his son, and raises the knife — and at the last moment the angel stops him. A ram, caught in the thorns, takes Isaac’s place. God swears by himself that Abraham’s offspring will be as many as the stars, and that in his offspring all the nations of the earth will be blessed."
+    ],
+    verses: [
+      ["Genesis 18:14", "Is anything difficult for God? According to the announcement, he will return to you at this same time, with life as a companion, and Sarah will have a son."],
+      ["Genesis 18:25", "Far be it from you to do this thing, and to kill the just with the impious, and for the just to be treated like the impious. No, this is not like you. You judge all the earth; you would never make such a judgment."],
+      ["Genesis 19:26", "And his wife, looking behind herself, was turned into a statue of salt."],
+      ["Genesis 19:29", "For when God overthrew the cities of that region, remembering Abraham, he freed Lot from the overthrow of the cities, in which he had dwelt."],
+      ["Genesis 21:1", "Then the Lord visited Sarah, just as he had promised; and he fulfilled what he had spoken."],
+      ["Genesis 21:6", "And Sarah said: ‘God has brought laughter to me. Whoever will hear of it will laugh with me.’"],
+      ["Genesis 22:2", "He said to him: ‘Take your only begotten son Isaac, whom you love, and go into the land of vision. And there you shall offer him as a holocaust upon one of the mountains, which I will show to you.’"],
+      ["Genesis 22:8", "But Abraham said, ‘God himself will provide the victim for the holocaust, my son.’ Thus they continued on together."],
+      ["Genesis 22:12", "And he said to him, ‘Do not extend your hand over the boy, and do not do anything to him. Now I know that you fear God, since you have not spared your only begotten son for my sake.’"],
+      ["Genesis 22:18", "And in your offspring, all the nations of the earth will be blessed, because you obeyed my voice."]
+    ],
+    themes: [
+      "God keeps his promises, even when they seem impossible — nothing is too difficult for God.",
+      "Abraham’s friendship with God: he pleads for Sodom, and God listens.",
+      "God’s justice is real — Sodom falls — but he always saves the righteous he finds.",
+      "Laughter: Sarah laughs in disbelief, then laughs for joy — God turns the impossible into delight.",
+      "The test on Mount Moriah: Abraham obeys even to the point of giving up the son of promise, and God provides the substitute.",
+      "The Church has long read Isaac carrying the wood and the ram taking his place as a foreshadowing of Christ — a traditional reading, not a doctrine about this passage."
+    ],
+    reflect: "Abraham trusted God even when the command made no sense — and God provided. Where is God asking you to trust him before you can see how it will work out?"
+  };
+
+  var SECTION_9 = {
+    happens: [
+      "Sarah dies at the age of one hundred and twenty-seven, and Abraham mourns her. He buys the cave of Machpelah at Hebron as her burial place — the first piece of the promised land that is actually his, bought with silver, not taken by force. Then Abraham, now old, sends his most trusted servant back to his own kin to find a wife for Isaac, making him swear not to take a wife from the Canaanites. At the well outside the town, the servant prays for a sign: the girl who offers water to him and to his camels will be the one. Rebekah comes, draws water for the man and for all ten camels, and the servant knows his prayer is answered. Her family agrees, and when they ask Rebekah herself, she answers simply, “I will go.” Isaac takes her into his mother Sarah’s tent, marries her, and loves her — and her love tempers his grief. Abraham dies at one hundred and seventy-five and is buried beside Sarah. Isaac prays for Rebekah, who is barren, and God answers: she conceives twins. The boys struggle in her womb, and the Lord tells her two nations are there — and the elder will serve the younger. Esau is born first, red and hairy, a hunter who loves the open country; Jacob follows, holding his brother’s heel, quiet and at home in the tents. One day Esau comes in famished from the field and sells his birthright to Jacob for bread and a bowl of lentil stew, giving little weight to what he has given away. In a famine Isaac goes to Gerar, and God renews to him the promise made to Abraham. Isaac digs wells, and his neighbours quarrel over them — until at last he digs one no one disputes and names it Rehoboth, “room”: now the Lord has made room for them. Even Abimelech, king of Gerar, comes to make a treaty, saying, “We saw that the Lord is with you.”"
+    ],
+    verses: [
+      ["Genesis 23:19", "So then, Abraham buried his wife Sarah in the double cave of the field that overlooked Mamre. This is Hebron in the land of Canaan."],
+      ["Genesis 24:58", "And when, having been called, she arrived, they wanted to know, ‘Will you go with this man?’ And she said, ‘I will go.’"],
+      ["Genesis 24:67", "And he led her into the tent of Sarah his mother, and he accepted her as wife. And he loved her so very much, that it tempered the sorrow which befell him at his mother’s death."],
+      ["Genesis 25:21", "And Isaac beseeched the Lord on behalf of his wife, because she was barren. And he heard him, and he gave conception to Rebekah."],
+      ["Genesis 25:23", "And responding, he said, ‘Two nations are in your womb, and two peoples will be divided out of your womb, and one people will overcome the other people, and the elder will serve the younger.’"],
+      ["Genesis 25:34", "And so, taking bread and the food of lentils, he ate, and he drank, and he went away, giving little weight to having sold the right of the firstborn."],
+      ["Genesis 26:22", "Advancing from there, he dug another well, over which they did not contend. And so he called its name, ‘Latitude,’ saying, ‘Now the Lord has expanded us and caused us to increase across the land.’"],
+      ["Genesis 26:24", "where the Lord appeared to him on the same night, saying: ‘I am the God of Abraham your father. Do not be afraid, for I am with you. I will bless you, and I will multiply your offspring because of my servant Abraham.’"],
+      ["Genesis 26:28", "And they responded: ‘We saw that the Lord is with you, and therefore we said: Let there be an oath between us, and let us initiate a pact,’"]
+    ],
+    themes: [
+      "God keeps his promises across generations — the promise made to Abraham passes to Isaac, and reaches Jacob before he is even born.",
+      "God guides ordinary decisions: the servant prays at the well, and God answers through Rebekah’s kindness.",
+      "Small faithfulness matters: drawing water for ten camels, digging wells, walking away from a quarrel instead of fighting over it.",
+      "The birthright: Esau trades something lasting for something immediate — a warning about what we give away cheaply.",
+      "God chooses freely: the elder will serve the younger, not by human custom but by God’s own word.",
+      "Grief and comfort: Isaac’s love for Rebekah tempers his sorrow at his mother’s death — God gives comfort in the middle of loss."
+    ],
+    reflect: "Esau sold his birthright for a bowl of stew. What lasting thing might you be trading away for something that only satisfies you right now?"
+  };
+
+  var SECTION_10 = {
+    happens: [
+      "Isaac is old now, and his eyesight is nearly gone. He calls Esau, his elder son, and asks him to hunt game and prepare a meal, so that he can bless him before he dies. But Rebekah overhears. She has never forgotten God’s word that the elder would serve the younger, and she takes matters into her own hands. She sends Jacob in with goat meat dressed as Esau’s cooking, Esau’s clothes on his back, and goat skins on his hands and neck. Isaac is suspicious — the voice is Jacob’s — but the smell of the clothes and the feel of the skins convince him. He gives Jacob the blessing of the firstborn: grain and wine, lordship over his brothers, blessing for all who bless him.",
+      "Minutes later Esau returns with his own meal. Isaac trembles. The blessing is given, and it cannot be taken back. Esau cries out for a blessing of his own, but only a lesser word is left for him — and hatred takes root. He vows to kill Jacob once their father is dead. Rebekah hears of it and sends Jacob away to her brother Laban in Haran, to find a wife and wait out Esau’s anger.",
+      "Alone on the road, with a stone for a pillow, Jacob dreams: a ladder stands on the earth with its top in heaven, and the angels of God go up and down on it. And the Lord stands above it and speaks — the same promise he gave Abraham and Isaac, now given to Jacob: this land, offspring like the dust of the earth, blessing for all the tribes of the earth, and God himself as his guardian wherever he goes. Jacob wakes and says, “Truly, the Lord is in this place, and I did not know it.” He names the place Bethel — the house of God — sets up the stone as a monument, and vows: if God brings him home safely, the Lord will be his God, and he will give a tenth of all he receives."
+    ],
+    verses: [
+      ["Genesis 27:28", "May God give to you, from the dew of heaven and from the fatness of the earth, an abundance of grain and wine."],
+      ["Genesis 27:29", "And may the peoples serve you, and may the tribes reverence you. May you be the lord of your brothers, and may your mother’s sons bow down before you. Whoever curses you, may he be cursed, and whoever blesses you, may he be filled with blessings."],
+      ["Genesis 27:33", "Isaac became frightened and very astonished. And wondering beyond what can be believed, he said: ‘Then who is he that a while ago brought me the prey from his hunting, from which I ate, before you arrived? And I blessed him, and he will be blessed.’"],
+      ["Genesis 27:41", "Therefore, Esau always hated Jacob, for the blessing with which his father had blessed him. And he said in his heart, ‘The days will arrive for the mourning of my father, and I will kill my brother Jacob.’"],
+      ["Genesis 28:14", "And your offspring will be like the dust of the earth. You will spread abroad to the West, and to the East, and to the North, and to the Meridian. And in you and in your offspring, all the tribes of the earth shall be blessed."],
+      ["Genesis 28:15", "And I will be your guardian wherever you will journey, and I will bring you back into this land. Neither will I dismiss you, until I have accomplished all that I have said."],
+      ["Genesis 28:16", "And when Jacob had awakened from sleep, he said, ‘Truly, the Lord is in this place, and I did not know it.’"],
+      ["Genesis 28:17", "And being terrified, he said: ‘How terrible this place is! This is nothing other than the house of God and the gateway of heaven.’"]
+    ],
+    themes: [
+      "A blessing spoken cannot be taken back — in this story, words carry real weight, and God’s purposes move through them.",
+      "Deception has consequences: Jacob gains the blessing but loses his home, his mother, and his brother’s love.",
+      "God works through flawed people — he had already chosen Jacob before any of this happened, and the scheming was not what made it true.",
+      "God meets Jacob when he is alone and on the run — grace finds us at our lowest, not only when we have it together.",
+      "Bethel, the house of God: heaven touches earth. The ladder, with angels ascending and descending, is the sign of it — the Church has long read it as pointing to Christ, who joins heaven and earth."
+    ],
+    reflect: "Jacob received the blessing through deceit — and then had to run for his life. Where in your own life has a shortcut cost more than it was worth?"
+  };
+
+  var SECTIONS = { 1: SECTION_1, 2: SECTION_2, 3: SECTION_3, 4: SECTION_4, 5: SECTION_5, 6: SECTION_6, 7: SECTION_7, 8: SECTION_8, 9: SECTION_9, 10: SECTION_10 };
 
   var tocList = document.getElementById("toc-list");
   var panel = document.getElementById("panel");
